@@ -1,4 +1,3 @@
-import 'package:drawer_design/view/screens/feedback_screen.dart';
 import 'package:drawer_design/view/screens/slider_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,13 +17,13 @@ class Home extends StatelessWidget {
           fontFamily: "Signika",
           appBarTheme: const AppBarTheme(
             systemOverlayStyle: SystemUiOverlayStyle(
-                statusBarColor: Colors.transparent,
+                statusBarColor: Colors.white,
                 statusBarIconBrightness: Brightness.dark),
             color: Colors.white,
             elevation: 0,
           )),
       debugShowCheckedModeBanner: false,
-      home: SliderScreen(),
+      home: const SliderScreen(),
     );
   }
 }

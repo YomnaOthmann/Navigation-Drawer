@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField({super.key, required this.feedbackController});
-  var feedbackController = TextEditingController();
+  const CustomTextField({super.key, required this.feedbackController});
+  final TextEditingController feedbackController;
   @override
   Widget build(BuildContext context) {
     return Padding(
