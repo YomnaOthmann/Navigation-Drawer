@@ -1,5 +1,7 @@
 import 'package:drawer_design/view/screens/feedback_screen.dart';
+import 'package:drawer_design/view/screens/slider_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const Home());
@@ -12,9 +14,17 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: "Signika"),
+      theme: ThemeData(
+          fontFamily: "Signika",
+          appBarTheme: const AppBarTheme(
+            systemOverlayStyle: SystemUiOverlayStyle(
+                statusBarColor: Colors.transparent,
+                statusBarIconBrightness: Brightness.dark),
+            color: Colors.white,
+            elevation: 0,
+          )),
       debugShowCheckedModeBanner: false,
-      home: FeedbackScreen(),
+      home: SliderScreen(),
     );
   }
 }
