@@ -76,11 +76,16 @@ class _SliderScreenState extends State<SliderScreen> {
                 thickness: 2,
                 color: Colors.grey[300],
               ),
-              const CustomDrawerItem(text: "Home", icon: Icons.home),
+              CustomDrawerItem(
+                text: "Home",
+                icon: Icons.home,
+                onTap: () {},
+              ),
               ListTile(
                 minVerticalPadding: 20,
                 minLeadingWidth: 20,
                 horizontalTitleGap: 10,
+                onTap: () {},
                 leading: Image.asset(
                   "assets/images/customer-service.png",
                   height: 30,
@@ -92,10 +97,26 @@ class _SliderScreenState extends State<SliderScreen> {
                   style: TextStyle(color: Colors.grey[800], fontSize: 18),
                 ),
               ),
-              const CustomDrawerItem(text: "FeedBack", icon: Icons.help),
-              const CustomDrawerItem(text: "Invite Friend", icon: Icons.people),
-              const CustomDrawerItem(text: "Rate the app", icon: Icons.share),
-              const CustomDrawerItem(text: "About Us", icon: Icons.info),
+              CustomDrawerItem(
+                text: "FeedBack",
+                icon: Icons.help,
+                onTap: () {},
+              ),
+              CustomDrawerItem(
+                text: "Invite Friend",
+                icon: Icons.people,
+                onTap: () {},
+              ),
+              CustomDrawerItem(
+                text: "Rate the app",
+                icon: Icons.share,
+                onTap: () {},
+              ),
+              CustomDrawerItem(
+                text: "About Us",
+                icon: Icons.info,
+                onTap: () {},
+              ),
               const SizedBox(
                 height: 20,
               ),
